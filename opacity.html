@@ -8,33 +8,60 @@
         body{
             background-color:white;
         }
-        img{
+        .container {
             position: relative;
-            display: flex;
-            opacity: 0.2;
-            height: 30%;
-            width: 30%;
-            margin-left: 30%;
-            margin-top: 10%;
-        }
-        div{
+            text-align: center;
+            color: black;
+          }
+          
+          /* Bottom left text */
+          .bottom-left {
             position: absolute;
-            top: 0%;
-            display: flex;
-            margin-left: 35%;
-            margin-top: 20%;
-        }
+            bottom: 8px;
+            left: 350px;
+          }
+          
+          /* Top left text */
+          .top-left {
+            position: absolute;
+            top: 8px;
+            left: 350px;
+          }
+          
+          /* Top right text */
+          .top-right {
+            position: absolute;
+            top: 8px;
+            left: 900px;
+          }
+          
+          /* Bottom right text */
+          .bottom-right {
+            position: absolute;
+            bottom: 8px;
+            left: 900px;
+          }
+          
+          /* Centered text */
+          .centered {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);}
+            img{
+                opacity: 0.3;
+            }
     
     </style>
 </head>
 <body>
-    <div>
-        <span class="spn1">Top left</span>
-        <span class="spn2" >Bottom left</span>
-        <span class="spn3">Top right</span>
-        <span class="spn4">Bottom right</span>
-        <span class="spn5">Centre</span>
-    </div>
-    <img src="./instagram icon.jpg" alt="Instagram">
+    <div class="container">
+        <img src="./N.M.D.jpg" alt="Snow" style="width:50%;" opacity="0.3">
+        <div class="bottom-left">Bottom Left</div>
+        <div class="top-left">Top Left</div>
+        <div class="top-right">Top Right</div>
+        <div class="bottom-right">Bottom Right</div>
+        <div class="centered">Centered</div>
+      </div>
 </body>
 </html>
